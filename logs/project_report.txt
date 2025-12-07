@@ -1,0 +1,45 @@
+Project Scan Report
+Path: C:\Users\arjun\OneDrive\Desktop\GMAIL_APP
+Generated: 2025-12-06T10:28:28.283154Z
+
+
+Python files count: 16422
+
+== Syntax / Compile checks ==
+
+Compiled files: 18
+
+No syntax errors found.
+
+
+== TODO / FIXME / HACK markers ==
+
+ - C:\Users\arjun\OneDrive\Desktop\GMAIL_APP\project_scan.py:102 -> todo_re = re.compile(r"\b(TODO|FIXME|HACK|XXX)\b", re.I)
+
+ - C:\Users\arjun\OneDrive\Desktop\GMAIL_APP\project_scan.py:203 -> parts.append("\n== TODO / FIXME / HACK markers ==\n")
+
+ - C:\Users\arjun\OneDrive\Desktop\GMAIL_APP\project_scan.py:211 -> parts.append("No TODO-like markers found.\n")
+
+ - C:\Users\arjun\OneDrive\Desktop\GMAIL_APP\gmail\sync.py:34 -> - TODO: generate embeddings and upsert to vector DB here
+
+
+== Sensitive filename / token heuristics ==
+
+ - secret_pattern: C:\Users\arjun\OneDrive\Desktop\GMAIL_APP\project_scan.py (AWS Secret Access Key)
+
+
+== Large files (>= 5MB) ==
+
+No large files found.
+
+
+(External tools not run. Use --run-tools to run ruff/pyright/mypy/pytest if installed.)
+
+
+== Hints & Next Steps ==
+
+
+- If secrets were found, remove them and rotate keys immediately.
+- Run `python -m pip install ruff pyright mypy pytest` and re-run with --run-tools for richer results.
+- Use `.gitignore` to avoid committing credentials; consider adding a pre-commit hook.
+- For Gmail projects specifically: check credentials/ and .env for OAuth files and never commit them.
